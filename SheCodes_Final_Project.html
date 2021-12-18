@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Japan</title>
+    <style>
+      body {
+        background: linear-gradient(
+          179.4deg,
+          rgb(253, 240, 233) 2.2%,
+          rgb(255, 194, 203) 96.2%
+        );
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        text-transform: capitalize;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        border: 3px solid #fff;
+        padding: 20px;
+        border-radius: 4px;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+      }
+      button {
+        text-align: center;
+        padding: 15px 20px;
+        border-radius: 25px;
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background-color: #ff6f87;
+        border: none;
+        font-size: 15px;
+        font-weight: bolder;
+        box-shadow: 5px 5px 10px black;
+        transition: all 200ms ease-in-out;
+        font-family: "Courier New", Courier, monospace;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background: #ec4d68;
+      }
+      img {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px;
+      }
+      .more_info {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+      .more_info:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 10px;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Japan</h1>
+      <h2>
+        <strong
+          >Learning Japanese language is difficult, but extremely rewarding
+        </strong>
+      </h2>
+      <img src=
+      https://www.rd.com/wp-content/uploads/2020/05/GettyImages-902966276.jpg
+      alt= "Japan" width="500">
+      <h3>
+        <p>
+          The country's name is made up of the characters<strong> 日 </strong
+          >(pronunciation ni, "day, sun") and<strong> 本 </strong>(pronunciation
+          hon, "origin, root, beginning"). Japan is therefore also known as the
+          <em> "Land of the Rising Sun" </em>. The compound term can be
+          pronounced both Nippon (に っ ぽ ん) and Nihon (に ほ ん).
+          <br />
+          <a
+            href="https://de.wikipedia.org/wiki/Japan"
+            target="_blank"
+            class="more_info"
+          >
+            <span> Learn more</span>
+          </a>
+        </p>
+      </h3>
+      <button class="learnButton">Contact me</button>
+      <p class="footer">This page was built by Leo Sobecki</p>
+    </div>
+    <script>
+      function Learn() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let anime = prompt("What is your favourite anime?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! We'll be in touch! " +
+            "Meanwhile have fun watching " +
+            anime
+        );
+      }
+      let learnButton = document.querySelector(".learnButton");
+      learnButton.addEventListener("click", Learn);
+    </script>
+  </body>
+</html>
